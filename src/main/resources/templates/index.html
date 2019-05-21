@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello FastDFS</title>
+</head>
+<body>
+   <h1>Hello FastDFS</h1>
+   <img src="../static/image/gt.jpg">
+   <a href="upload.html">立即跳转</a>
+   <a><span>m</span>秒之后自动跳转</a>
+
+   <script type="text/javascript">
+       var m = 5;
+       function jump() {
+           for (var i= 0;i<m;i++){
+               if (m==0){
+                   location.href="/fastdfs/upload";
+               } else {
+                   m--;
+               }
+           }
+       }
+       window.onload=jump();
+   </script>
+</body>
+</html>
