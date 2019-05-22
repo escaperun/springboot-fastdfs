@@ -80,4 +80,5 @@
         <appender-ref ref="stdout"/>
         <appender-ref ref="appLogAppender"/>
     </root>
+
 </configuration>
